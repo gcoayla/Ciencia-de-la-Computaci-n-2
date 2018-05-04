@@ -6,7 +6,7 @@ int normal(char matriz[]){
         cout<<matriz[cont]<<endl;
         cont++;
     }
-    return cont+1;
+    return cont;
 }
 int punteros(char matriz[]){
     int cont=0;
@@ -14,13 +14,12 @@ int punteros(char matriz[]){
         cout<<*(matriz+cont)<<endl;
         cont++;
     }
-    return cont+1;
+    return cont;
 }
 int main(){
-    char arreglo[8]={'a','a','a','a','a','a','a',NULL};
-    string hola="hola";
-    int nres=normal(arreglo);
+    char arregloo[]="Hola como estas";
+    int nres=normal(arregloo);
     cout<<nres<<endl;
-    int nres2=punteros(arreglo);
+    int nres2=punteros(arregloo);
     cout<<nres2<<endl;
 }
